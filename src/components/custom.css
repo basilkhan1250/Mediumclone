@@ -1,0 +1,41 @@
+.Navbar {
+    background-color: white;
+    color: black;
+    position: sticky;
+    border: 1px solid #f2f2f2;
+    /* box-shadow: #F9F9F9; */
+}
+
+.logo {
+    padding: 22px;
+}
+
+.label {
+    position: relative;
+}
+.input-style {
+    position: relative;
+    bottom: 20px;
+    left: 15px;
+    padding: 7px;
+    padding-left: 30px;
+    border-radius: 25px;
+    border: 1px solid white;
+    background: #F9F9F9;
+    height: 52px;
+}
+.search{
+    position: relative;
+    opacity: 0.6;
+    right: 18px;
+    top: 4px;
+}
+
+.input-style input {
+    background-color: transparent;
+    border: 0px solid;
+    position: relative;
+    right: 8px;
+    bottom: 1px;
+    font-size: 12px;
+}
