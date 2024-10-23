@@ -28,7 +28,12 @@ const Navbar = () => {
             <div className="upper-space">
                 <div className="nested-navbar">
                     <span className="add">+</span>
-
+                    <span className="for-you">
+                        <p>For you</p>
+                    </span>
+                    <span className="following">
+                        <p>Following</p>
+                    </span>
                 </div>
             </div>
 

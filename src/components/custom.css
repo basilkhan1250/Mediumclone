@@ -71,16 +71,39 @@
 .nested-navbar {
     position: fixed;
     left: 14.4%;
-    top: 77px;
+    border-bottom: 1px solid #f2f2f2;
+    height: 20px;
+    width: 42%;
+    margin: 0 auto;
+}
+
+.for-you {
+    position: inherit;
+    left: 17.1%;
+    top: 89px;
+}
+
+.following {
+    position: inherit;
+    left: 22%;
+    top: 89px;
+}
+
+.following p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.for-you p {
+    font-size: 13px;
+    text-decoration: underline;
+    text-underline-offset: 17px;
 }
 
 .add {
+    position: inherit;
+    top: 77px;
     opacity: 0.6;
     font-weight: 100;
     font-size: 26px;
-}
-
-.upper-space {
-    /* border: 1px solid black;
-    height: 10px; */
 }
