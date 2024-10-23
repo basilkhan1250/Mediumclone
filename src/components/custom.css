@@ -2,9 +2,10 @@
     background-color: white;
     color: black;
     position: sticky;
+    height: 52px;
     border: 1px solid #f2f2f2;
-    /* box-shadow: #F9F9F9; */
 }
+
 
 .logo {
     padding: 22px;
@@ -13,10 +14,11 @@
 .label {
     position: relative;
 }
+
 .input-style {
     position: relative;
     bottom: 20px;
-    left: 15px;
+    left: -6px;
     padding: 7px;
     padding-left: 30px;
     border-radius: 25px;
@@ -24,7 +26,8 @@
     background: #F9F9F9;
     height: 52px;
 }
-.search{
+
+.search {
     position: relative;
     opacity: 0.6;
     right: 18px;
@@ -38,4 +41,46 @@
     right: 8px;
     bottom: 1px;
     font-size: 12px;
+}
+
+.write-svg {
+    position: relative;
+    left: 61.3%;
+    bottom: 14px;
+    opacity: 0.6;
+}
+
+.write {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    right: 10%;
+    width: 100%;
+    bottom: 39px;
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+.notification {
+    position: relative;
+    left: 92%;
+    opacity: 0.5;
+    bottom: 60px;
+}
+
+.nested-navbar {
+    position: fixed;
+    left: 14.4%;
+    top: 77px;
+}
+
+.add {
+    opacity: 0.6;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+.upper-space {
+    /* border: 1px solid black;
+    height: 10px; */
 }
