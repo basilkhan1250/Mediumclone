@@ -1,5 +1,6 @@
 import React from "react";
 import "./custom.css"
+import DataComponent from "./DataComponent";
 
 const Navbar = () => {
 
@@ -36,6 +37,7 @@ const Navbar = () => {
                     </span>
                 </div>
             </div>
+            <DataComponent></DataComponent>
         </div>
     )
 
