@@ -5,8 +5,12 @@ const DataComponent = () => {
 
     const componentsData = [
         {
-            title: "Noobdy wants to use these HTML tags 😭",
-            content: "Trust me, you can do MUCH better than <div> <a> and <p>.",
+            namme: "Alexander Nguyen",
+            title: "Quitting my $300,000 Google job for a 0 User app",
+            content: "It wasn't worth it.",
+            date: "May 16",
+            likes: "3k",
+            comments: "43",
         },
         {
             title: "16 little UI design tips that make a big impact",
