@@ -112,5 +112,8 @@
     font-size: 26px;
 }
 .dynamic-data{
-    padding: 40px;
+    position: relative;
+    top: 90px;
+    left: 10%;
+    padding: 60px;
 }
