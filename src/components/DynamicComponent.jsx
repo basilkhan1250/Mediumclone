@@ -4,9 +4,11 @@ const DynamicComponent = (props) => {
 
     return (
         <div className="dynamic-data">
-            
-            <h2>{props.title}</h2>
-            <p>{props.content}</p>
+            <p className="name">{props.names}</p>
+            <h2 className="title">{props.title}</h2>
+            <p className="content">{props.content}</p>
+
+            <span className="data-line"></span>
         </div>
     )
 
