@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "./assets/content1-img.jpg"
 
 const DynamicComponent = (props) => {
 
