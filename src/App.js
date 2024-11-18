@@ -1,13 +1,20 @@
 import './App.css';
 import Navbar from './components/Navbar';
-// import DataComponent from './components/DataComponent';
-
+import { Routes, Route } from 'react-router';
+import AnotherDev from './components/AnotherData';
+import Blogs from './components/Blogs';
+import NotFoundData from './components/NotFoundData';
 
 function App() {
   return (
     <div>
-      <Navbar></Navbar>
-      {/* <DataComponent></DataComponent> */}
+      <Routes>
+        <Route path='/' element={<Navbar />}></Route>
+        <Route path='/blogs' element={<AnotherDev />}>
+          <Route path=":INumber" element={<Blogs />}></Route>1
+        </Route>
+        <Route path='*' element={<NotFoundData />}></Route>
+      </Routes>
     </div>
   );
 }

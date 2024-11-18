@@ -1,14 +1,11 @@
-/* Reset body margin to avoid any gap */
 body {
     margin: 0;
-    /* background-color: orange; */
 }
 
-/* Main Navbar */
 .Navbar {
     background-color: white;
     color: black;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     height: 52px;
     border-bottom: 1px solid #f2f2f2;
@@ -17,14 +14,15 @@ body {
     padding: 0;
 }
 
-/* Nested Navbar */
 .nested-navbar {
     position: sticky;
     display: flex;
+    top: 0;
     height: 70px;
     background-color: white;
-    margin-top: -49px;
+    /* margin-top: 2px; */
     padding-right: 160px;
+    z-index: 4;
 }
 
 
@@ -32,6 +30,7 @@ body {
 .logo {
     padding: 22px;
 }
+
 
 .label {
     position: relative;
@@ -134,15 +133,15 @@ body {
 
 .dynamic-data {
     position: relative;
-    top: 90px;
+    top: 10px;
     height: 210px;
     margin-left: 200px;
     margin-bottom: 10px;
     padding-top: 30px;
-    /* padding-bottom: 30px; */
     display: flex;
     border-bottom: 1px solid #f2f2f2;
     width: 43%;
+    cursor: pointer;
 }
 
 .text-content {
@@ -152,7 +151,6 @@ body {
 .name {
     font-size: 12px;
     opacity: 0.8;
-    /* margin-left: 10px; */
     padding-bottom: 10px;
 }
 

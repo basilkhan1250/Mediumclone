@@ -1,13 +1,26 @@
-import React from "react";
-import DynamicComponent from "./DynamicComponent";
+// import React from "react";
+
+
+// const Blogs = () => {
+//     return (
+//         <div>
+//             <h1>Blogs are here</h1>
+//         </div>
+//     )
+// }
+
+
+// export default Blogs;
+
 import image1 from "./assets/content1-img.jpg"
 import image2 from "./assets/content2-img.jpg"
 import image3 from "./assets/content3-img.jpg"
 import image4 from "./assets/content4-img.jpg"
 import image5 from "./assets/content5-img.jpg"
-import { Link } from "react-router-dom";
+import { useParams } from "react-router"
+import React from "react";
+const Blogs = () => {
 
-const DataComponent = () => {
 
     const componentsData = [
         {
@@ -86,32 +99,22 @@ const DataComponent = () => {
             more: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M4.385 12c0 .55.2 1.02.59 1.41.39.4.86.59 1.41.59s1.02-.2 1.41-.59c.4-.39.59-.86.59-1.41s-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.59 1.41m5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59s1.02-.2 1.41-.59c.4-.39.59-.86.59-1.41s-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.03.2-1.42.59s-.58.86-.58 1.41m5.6 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.43.59s1.03-.2 1.42-.59.58-.86.58-1.41-.2-1.02-.58-1.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59s-.58.86-.58 1.41" clip-rule="evenodd"></path></svg>',
         }
     ]
+
+    const { INumber } = useParams();
+    const Data = componentsData[INumber];
+    const { names, title, content, image, comments, likes, date } = Data;
+    console.log(INumber)
     return (
         <div>
-            {(componentsData).map((value, i) => (
-                // <DynamicComponent key={i} {...value } />
-                <div className="dynamic-data">
-                    <div className="text-content">
-                        <Link to={{
-                            pathname: "/blogs",
-                        }}>
-                            <p className="name">{value.names}</p>
-                            <h2 className="title">{value.title}</h2>
-                            <p className="content">{value.content}</p>
-                            <div className="other-data">
-                                <p>{value.date}</p>
-                                <p>{value.likes}</p>
-                                <p>{value.comments}</p>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="img-div">
-                        <img src={value.image} alt="images" />
-                    </div>
-                </div>
-            ))}
+            <h1>{title}</h1>
+            <p>By: {names}</p>
+            <p>{content}</p>
+            <p>Date: {date}</p>
+            <p>Likes: {likes}</p>
+            <p>Comments: {comments}</p>
+            <img src={image} alt="Blog" />
         </div>
-    )
-}
+    );
+};
 
-export default DataComponent;
+export default Blogs;
