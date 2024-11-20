@@ -25,16 +25,13 @@ body {
     z-index: 4;
 }
 
-
-
 .logo {
     padding: 22px;
 }
 
-
-.label {
+/* .label {
     position: relative;
-}
+} */
 
 .input-style {
     position: relative;

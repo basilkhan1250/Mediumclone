@@ -100,12 +100,13 @@ const Blogs = () => {
         }
     ]
 
-    const { INumber } = useParams();
-    const Data = componentsData[INumber];
+    const { number } = useParams();
+    const Data = componentsData[number];
     const { names, title, content, image, comments, likes, date } = Data;
-    console.log(INumber)
+    console.log(number)
     return (
         <div>
+            <h1>Blogs component</h1>
             <h1>{title}</h1>
             <p>By: {names}</p>
             <p>{content}</p>

@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Navbar />}></Route>
         <Route path='/blogs' element={<AnotherDev />}>
-          <Route path=":INumber" element={<Blogs />}></Route>1
+          <Route path=":number" element={<Blogs />}></Route> 
         </Route>
         <Route path='*' element={<NotFoundData />}></Route>
       </Routes>
