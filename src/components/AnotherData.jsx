@@ -1,11 +1,13 @@
-import { Outlet } from "react-router"
+import { Outlet } from 'react-router';
+import Blogs from './Blogs';
 
-const AnotherDev = () => {
+function AnotherDev() {
     return (
         <div>
-            <Outlet></Outlet>
+            {/* <Blogs></Blogs> */}
+            <Outlet />
         </div>
-    )
+    );
 }
 
-export default AnotherDev
+export default AnotherDev;

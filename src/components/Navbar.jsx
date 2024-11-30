@@ -1,10 +1,4 @@
-import React from "react";
-import "./custom.css"
-import DataComponent from "./DataComponent";
-
-
 const Navbar = () => {
-
     return (
         <div>
             <div className="Navbar">
@@ -39,11 +33,8 @@ const Navbar = () => {
                 </span>
             </div>
             <span className="line"></span>
-            <DataComponent></DataComponent>
-        </div >
+        </div>
     )
 
 }
-
-
 export default Navbar;
