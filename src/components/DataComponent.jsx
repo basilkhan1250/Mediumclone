@@ -14,8 +14,10 @@ const DataProvider = ({ children }) => {
                 const data = await response.json();
                 const article = data.articles;
                 const newData = article.splice(0, 3)
+                const otherData = article.splice(1, 1)
+                const anotherData = article.splice(2, 1)
                 setData(article);
-                console.log(article);
+                // console.log();
             } catch (error) {
                 console.error("Error Fetching Articles:", error);
             }
@@ -30,29 +32,7 @@ const DataProvider = ({ children }) => {
         <DataContext.Provider value={data}>
             {children}
             {/* Only render this part if we're NOT on the blog detail page */}
-            {!isBlogDetailPage && (
-                <div>
-                    {data.map((value, i) => (
-                        <div key={i} className="dynamic-data">
-                            <div className="text-content">
-                                <Link to={`/Blogs/${i}`}>
-                                    <p className="name">{value.author}</p>
-                                    <h2 className="title">{value.title}</h2>
-                                    <p className="content">{value.content}</p>
-                                    <div className="other-data">
-                                        <p>{value.date}</p>
-                                        <p>{value.likes}</p>
-                                        <p>{value.comments}</p>
-                                    </div>
-                                </Link>
-                            </div>
-                            <div className="img-div">
-                                <img src={value.urlToImage} alt="images" />
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            )}
+            {/* {!isBlogDetailPage && ()} */}
         </DataContext.Provider>
     );
 };

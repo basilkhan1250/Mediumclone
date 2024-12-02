@@ -14,11 +14,12 @@ function App() {
       <DataProvider >
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />}></Route> 
-          <Route path='/blogs' element={<AnotherDev />}>/
+          <Route path='/home' element={<Home />}></Route>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/blogs' element={<AnotherDev />}>
             <Route path=":number" element={<Blogs />}></Route>
           </Route>
-          <Route path='*' element={<NotFoundData />}></Route>
+            <Route path='*' element={<NotFoundData />}></Route>
         </Routes>
       </DataProvider>
     </ div >
