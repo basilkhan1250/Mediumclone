@@ -17,7 +17,7 @@ const DataProvider = ({ children }) => {
                 const otherData = article.splice(1, 1)
                 // const anotherData = article.splice(2, 1)
                 setData(article);
-                // console.log();
+                console.log(article);
             } catch (error) {
                 console.error("Error Fetching Articles:", error);
             }

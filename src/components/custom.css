@@ -5,8 +5,9 @@ body {
 .Navbar {
     background-color: white;
     color: black;
-    /* position: sticky; */
+    position: sticky;
     top: 0;
+    z-index: 2;
     height: 52px;
     border-bottom: 1px solid #f2f2f2;
     margin: 0;
@@ -14,9 +15,9 @@ body {
 }
 
 .nested-navbar {
-    position: sticky;
+    /* position: sticky; */
     display: flex;
-    top: 0;
+    /* top: 0; */
     height: 70px;
     background-color: white;
     padding-right: 160px;
@@ -177,4 +178,25 @@ body {
 .links {
     color: black;
     text-decoration: none;
+}
+
+.blogs-data {
+    padding: 40px 350px 0px 350px;
+}
+
+.blogs-title {
+    color: rgb(25, 25, 25);
+    font-weight: 800;
+    font-size: 36px;
+    padding-bottom: 40px;
+}
+
+.blogs-image {
+    width: 100%;
+    height: 100%;
+}
+
+.blogs-description {
+    padding: 20px 0px;
+    font-size: 22px
 }
