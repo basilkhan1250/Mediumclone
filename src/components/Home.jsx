@@ -1,8 +1,8 @@
 import React from "react";
 import "./custom.css"
-import DataComponent from "./DataComponent"
+// import DataComponent from "./DataComponent"
 import { useArticles } from "./DataComponent";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 import { dataContext } from "react"
 import { Link } from "react-router-dom";
 
@@ -21,7 +21,12 @@ const Home = () => {
                         <Link className="links" to={`/Blogs/${i}`}>
                             <p className="name">{value.author}</p>
                             <h2 className="title">{value.title}</h2>
-                            <p className="content">{value.content.split(" ").slice(0, 14).join(" ") + "..."}</p>
+                            <p className="content">
+                                {/* {value.content.split(" ").slice(0, 16).join(" ") + "..."} */}
+                                {value && value.content
+                                    ? value.content.split(" ").slice(0, 14).join(" ") + "..."
+                                    : "No content available"}
+                            </p>
                             <div className="other-data">
                             </div>
                         </Link>
